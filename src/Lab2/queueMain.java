@@ -7,6 +7,9 @@ public class Task2 {
         firstQueue.push(20);
         firstQueue.push(30);
         firstQueue.pop();
+        firstQueue.push(20);
+        firstQueue.push(30);
+        firstQueue.push(30);
         System.out.println("Size = " + firstQueue.getSize());
         System.out.println("Empty = " + firstQueue.Empty());
         System.out.println("Full = " + firstQueue.Full());
