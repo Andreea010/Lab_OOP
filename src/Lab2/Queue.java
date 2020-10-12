@@ -10,12 +10,7 @@ class Queue {
     int length;
 
     public Queue() {
-        front = 0;
-        tail = 0;
-        size = 0;
-        length = 0;
-        queue = new int[size];
-
+        this(0);
     }
 
     public Queue(int n) {
@@ -26,36 +21,43 @@ class Queue {
         length = 0;
     }
 
-    public boolean Empty() {
+    public boolean Empty()
+    {
         return front == -1;
     }
 
     public boolean Full() {
-        return front == 0 && tail == size - 1;
+        return front == 0 && tail == length - 1;
     }
 
     public int getSize() {
         return length;
     }
 
-    public void push(int i) {
-        if (tail == -1) {
-            front = 0;
+    public void push(int i)
+    {
+        if (tail == -1)
+        {   front = 0;
             tail = 0;
             queue[tail] = i;
-        } else if (tail + 1 < size)
+        }
+
+        else if ( tail + 1 < size)
             queue[tail++] = i;
-        length++;
+        length++ ;
     }
 
 
-    public void pop() {
-        length--;
-        int a = queue[front];
-        if (front == tail) {
+    public void pop()
+    {
+        length-- ;
+        int n = queue[front];
+        if ( front == tail)
+        {
             front = -1;
             tail = -1;
-        } else
+        }
+        else
             front++;
     }
 }

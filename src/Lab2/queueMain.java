@@ -1,25 +1,24 @@
 package Lab2;
 
-public class Task2 {
+public class queueMain {
     public static void main(String[] args) {
-        Queue firstQueue = new Queue(4);
-        Queue secondQueue = new Queue();
-        firstQueue.push(20);
-        firstQueue.push(30);
-        firstQueue.pop();
-        firstQueue.push(20);
-        firstQueue.push(30);
-        firstQueue.push(30);
-        System.out.println("Size = " + firstQueue.getSize());
-        System.out.println("Empty = " + firstQueue.Empty());
-        System.out.println("Full = " + firstQueue.Full());
+        Queue Queue1 = new Queue(4);
+        Queue1.push(20);
+        Queue1.push(30);
+        Queue1.push(40);
+        Queue1.push(50);
+        Queue1.pop();
+        System.out.println("Size = " + Queue1.getSize());
+        System.out.println("Empty = " + Queue1.Empty());
+        System.out.println("Full = " + Queue1.Full());
 
-        secondQueue.push(10);
-        secondQueue.push(100);
-        secondQueue.push(1000);
-        secondQueue.pop();
-        System.out.println("Size = "+ secondQueue.getSize());
-        System.out.println("Empty status = "+ secondQueue.Empty());
+        Queue Queue2 = new Queue();
+        Queue2.push(10);
+        Queue2.push(100);
+        Queue2.push(1000);
+        Queue2.pop();
+        System.out.println("Size = "+ Queue2.getSize());
+        System.out.println("Empty status = "+ Queue2.Empty());
 
     }
 }
