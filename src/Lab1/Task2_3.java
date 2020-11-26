@@ -43,8 +43,6 @@ public class Task2_3 {
             System.out.println ("Students - Name: " + student.name + "," + " age: " + student.age + "," +
                     " Mark: " + student.mark); }
 
-        System.out.println("Average student mark: " + average1);
-
         System.out.println("\n" + "University: " + u2.name + ", Year of Foundation: " + u2.foundationYear);
         for (Student student : studentList2) {
             System.out.println ("Students - Name: " + student.name + "," + " age: " + student.age + "," +

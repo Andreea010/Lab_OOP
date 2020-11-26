@@ -5,6 +5,7 @@ public class Student {
     String name;
     int age;
     double mark;
+    double average;
     
     public Student(String name, int age, double mark) {
         this.name = name;
@@ -35,4 +36,6 @@ public class Student {
     public void setMark(double mark) {
         this.mark = mark;
     }
+
+
 }
