@@ -25,7 +25,7 @@ public class Main extends Application {
         tfNum2 = new TextField();
         btnDivide = new Button("/");
         btnClear = new Button("Clear");
-        lblAnswer = new Label("Result");
+        lblAnswer = new Label("Output");
 
         lblAnswer.setAlignment(Pos.CENTER);
         lblAnswer.setStyle("-fx-border-color: #000; -fx-padding: 5px;");
@@ -53,8 +53,8 @@ public class Main extends Application {
     }
 
     private void setWidths() {
-        tfNum1.setPrefWidth(70);
-        tfNum2.setPrefWidth(70);
+        tfNum1.setPrefWidth(100);
+        tfNum2.setPrefWidth(100);
         btnDivide.setPrefWidth(70);
         btnClear.setPrefWidth(150);
         lblAnswer.setPrefWidth(150);
@@ -71,7 +71,7 @@ public class Main extends Application {
         if (e.getSource() == btnClear) {
             tfNum1.setText("");
             tfNum2.setText("");
-            lblAnswer.setText("Result");
+            lblAnswer.setText("Output");
             tfNum1.requestFocus();
             return;
         }
