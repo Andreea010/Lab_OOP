@@ -41,6 +41,7 @@ public class Main {
                     + sphere.getVolume());
                 System.out.println("Geometric shape 3 - Parallelepiped: " + "surface: " + parallelepiped.getSurface() +
                         ", volume: " + parallelepiped.getVolume());
+                        FigureController.getmaxPerimeter();
         }
 
     }
